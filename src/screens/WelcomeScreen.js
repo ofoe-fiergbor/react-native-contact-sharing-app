@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Image, Text, TouchableOpacity, StyleSheet } from 'react-native'
 
-function WelcomeScreen() {
+function WelcomeScreen({navigation}) {
     return (
         <View>
             <Image source={require('../images/welcome.jpg')} style={styles.image} />
@@ -11,10 +11,10 @@ function WelcomeScreen() {
                     <Text style={{ marginVertical: 10, color: '#a1a1a1' }}>Sign in or register with your Codetrain email</Text>
                 </View>
                 <View style={styles.bottomLinksCtn}>
-                    <TouchableOpacity style={styles.btnLink}>
+                    <TouchableOpacity style={styles.btnLink} onPress={()=>navigation.navigate('registar')}>
                         <Text style={styles.btnText}>Register</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.btnLink}>
+                    <TouchableOpacity style={styles.btnLink} onPress={()=>navigation.navigate('login')}>
                         <Text style={styles.btnText}>Sign In</Text>
                     </TouchableOpacity>
                 </View>
@@ -27,7 +27,7 @@ export default WelcomeScreen
 
 const styles = StyleSheet.create({
     image: {
-        height: 350,
+        height: 290,
         width: 360
     },
     title: {

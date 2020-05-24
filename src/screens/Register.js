@@ -50,11 +50,13 @@ export default function Registar() {
 }
 const styles = StyleSheet.create({
     container: {
-     paddingHorizontal: 10
+     paddingHorizontal: 10,
+     flex: 1,
+     backgroundColor:'#fff'
     },
     addPhotoContainer: {
         height: 170,
-        backgroundColor: '#F0F0F0',
+        backgroundColor: '#E0E0E0',
         justifyContent: 'center',
         alignItems: 'center'
     },

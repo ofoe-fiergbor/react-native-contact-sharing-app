@@ -19,14 +19,14 @@ export default function App() {
       <NavigationContainer>
 
         <Stack.Navigator>
-          <Stack.Screen name='landing' component={Landing} />
+          <Stack.Screen name='landing' component={Landing} options={{headerShown:false}}/>
           <Stack.Screen name='welcome' component={WelcomeScreen} />
           <Stack.Screen name='login' component={Login} />
           <Stack.Screen name='registar' component={Registar} />
           <Stack.Screen name='member' component={MemberProfile} />
           <Stack.Screen name='myProfile' component={MyProfile} />
           <Stack.Screen name='qrCode' component={QRCodeScreen} />
-          <Stack.Screen name='qrScan' component={QRCamScreen} />
+          <Stack.Screen name='qrScan' component={QRCamScreen} options={{headerShown:false}} />
         </Stack.Navigator>
       </NavigationContainer>
 

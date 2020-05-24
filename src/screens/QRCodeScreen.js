@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native'
 
 
-export default function QRCodeScreen() {
+export default function QRCodeScreen({navigation}) {
     return (
         <View style={styles.container}>
             <View style={styles.subContainer}>
@@ -21,7 +21,7 @@ export default function QRCodeScreen() {
             </View>
             <View style={styles.footerContainer}>
                 <Text style={{fontSize:16, color:'grey'}}>Want to add a new connection?</Text>
-                <TouchableOpacity style={styles.scanBtn}>
+                <TouchableOpacity style={styles.scanBtn} onPress={()=>navigation.navigate('qrScan')}>
                     <Text style={{color:'purple'}}>Scan QR</Text>
                 </TouchableOpacity>
             </View>
@@ -31,8 +31,9 @@ export default function QRCodeScreen() {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 80,
-        flex: 1
+        paddingTop: 20,
+        flex: 1,
+        backgroundColor: '#fff'
     },
     subContainer: {
         marginHorizontal: 50,
