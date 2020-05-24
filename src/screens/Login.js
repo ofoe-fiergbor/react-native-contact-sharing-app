@@ -9,7 +9,7 @@ export default function Login({navigation}) {
             <View style={{ marginTop: 50, paddingHorizontal: 30 }}>
                 <View style={styles.formCtn}>
                     <Text style={styles.label}>Email</Text>
-                    <TextInput placeholder='joan.shay@sparrow.com' fontSize={15} textAlign="right" />
+                    <TextInput placeholder='joan.shay@sparrow.com' fontSize={15} textAlign="right" keyboardType={'email-address'} />
                 </View>
                 <View style={[styles.formCtn, { marginTop: 20 }]}>
                     <Text style={styles.label}>Password</Text>

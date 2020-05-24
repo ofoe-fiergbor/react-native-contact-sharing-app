@@ -20,7 +20,7 @@ export default function Registar() {
                         </View>
                         <View style={styles.formGroup}>
                             <Text style={styles.label}>Email</Text>
-                            <TextInput placeholder='joan.shay@sparrow.com' fontSize={15} textAlign="right" />
+                            <TextInput placeholder='joan.shay@sparrow.com' fontSize={15} textAlign="right" keyboardType={'email-address'}/>
                         </View>
                         <View style={styles.formGroup}>
                             <Text style={styles.label}>Phone Number</Text>

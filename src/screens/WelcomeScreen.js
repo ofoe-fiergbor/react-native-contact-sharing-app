@@ -27,7 +27,7 @@ export default WelcomeScreen
 
 const styles = StyleSheet.create({
     image: {
-        height: 290,
+        height: 350,
         width: 360
     },
     title: {
